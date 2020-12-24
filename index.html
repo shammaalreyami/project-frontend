@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aurora Theatre</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./lightslider.css">
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="shortcut icon" href="./fav-icon.png" />
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <img src="./MAIN.png" />
+        </a>
+        <ul class="menu">
+        <li> <a href="./index.html">Home</a></li>
+        <li> <a href="./musical&plays.html">Musicals & Plays</a></li>
+        <li> <a href="./about.html">About The Theatre</a></li>
+        <li> <a href="./find.html">Finding The Theatre</a></li>
+        <li> <a href="./contactus.html">Contact Us</a></li>
+        <li> <a href="./login.html">Login</a></li>
+        </ul>
+    
+        <div class="search">
+            <input type="text" placeholder="Search" />
+        </div>
+    </nav>
+
+    <section id="main">
+    <h1 class="showingnow-heading">Showing Now</h1>
+
+    <ul id="autoWidth" class="cs-hidden">
+        <li class="item-a">
+        <div class="showingnow-box">
+            <a href="./ozmovie.html">
+            <img src="./oz.jpg"/></a>
+        </div>
+        </li>
+        <li class="item-b">
+        <div class="showingnow-box">
+            <a href="./soundofmusic.html">
+            <img src="./soundofmusic.jpg"/></a>
+        </div>
+        </li>
+        <li class="item-c">
+            <div class="showingnow-box">
+                <img src="./matilda.jpg"/>
+        </div>
+        </li>
+        <li class="item-d">
+            <div class="showingnow-box">
+                <img src="./wicked.jpg"/>
+        </div>
+        </li>
+        <li class="item-e">
+            <div class="showingnow-box">
+                <img src="./aladdin.jpg"/>
+        </div>
+        </li>
+        <li class="item-f">
+            <div class="showingnow-box">
+                <img src="./les.jpg"/>
+        </div>
+        </li>
+
+      </ul>
+   
+</section>
+<section id="comingsoon">
+    <h2 class="comingsoon-heading">Coming Soon</h2>
+    <ul id="autoWidth2" class="cs-hidden">
+        <li class="item-a">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./beautyandthebeast.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Jan 2021</strong>
+                <p>Genre: Romance, Musical, Fantasy, Children's Film.</p>
+            </div>
+            </div>
+        </li>
+        <li class="item-b">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./kingkong.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Jan 2021</strong>
+                <p>Genre: Action, Adventure, Fantasy, Drama.</p>
+            </div>
+            </div>
+        </li>
+        <li class="item-c">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./r&j.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Jan 2021</strong>
+                <p>Genre: Tragedy, Romance, Shakespearean Tragedy, Play.</p>
+            </div>
+            </div>
+        </li>
+        <li class="item-d">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./lalaland.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Jan 2021</strong>
+                <p>Genre: Drama, Comedy, Romance, Musical.</p>
+            </div>
+            </div>
+        </li>
+        <li class="item-e">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./hamilton.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Feb 2021</strong>
+                <p>Genre: Ballad, Contemporary R&B, Musical.</p>
+            </div>
+            </div>
+        </li>
+        <li class="item-f">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./cirque.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Feb 2021</strong>
+                <p>Genre: Theatrical, Action, Suspense.</p>
+            </div>
+            </div>
+        </li>
+        <li class="item-g">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./hamlet.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Mar 2021</strong>
+                <p>Genre: Theatrical, Tragedy, Drama.</p>
+            </div>
+            </div>
+        </li>
+        <li class="item-h">
+            <div class="coming-soon">
+                <div class="coming-b-img">
+                    <img src="./titanic.jpg">
+            </div>
+            <div class="coming-b-text">
+                <strong>Coming in Mar 2021</strong>
+                <p>Genre: Romance, Drama, Action.</p>
+            </div>
+            </div>
+        </li>
+        </ul>
+        
+      </ul>
+</section>
+
+<script>
+
+$(document).ready(function() {
+    $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+        } 
+    });  
+  });
+</script>
+
+</body>
+</html>

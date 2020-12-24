@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aurora Theatre</title>
+    <link rel="stylesheet" href="./musical&plays.css" />
+    <link rel="stylesheet" href="./lightslider.css">
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="shortcut icon" href="./fav-icon.png" />
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <img src="./MAIN.png" />
+        </a>
+        <ul class="menu">
+        <li> <a href="./index.html">Home</a></li>
+        <li> <a href="./musical&plays.html">Musicals & Plays</a></li>
+        <li> <a href="./about.html">About The Theatre</a></li>
+        <li> <a href="./find.html">Finding The Theatre</a></li>
+        <li> <a href="./contactus.html">Contact Us</a></li>
+        <li> <a href="./login.html">Login</a></li>
+        </ul>
+    
+        <div class="search">
+            <input type="text" placeholder="Search" />
+        </div>
+    </nav>
+    <section id="main">
+        <h1 class="showingnow-heading">Book Now</h1>
+    
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showingnow-box">
+                    <a href="./ozmovie.html">
+                    <img src="./oz.jpg"/></a>
+                </div>
+                <strong>Oz The Great & Powerful</strong>
+                <button><a href="./ozmovie.html">Show Timings</a></button> 
+            </li>
+            
+            <li class="item-b">
+                <div class="showingnow-box">
+                    <a href="./soundofmusic.html">
+                    <img src="./soundofmusic.jpg"/></a>
+                </div>
+                <strong>The Sound Of Music</strong>
+                <button>Show Timings</button> 
+            </li>
+            
+            <li class="item-c">
+                <div class="showingnow-box">
+                    <img src="./matilda.jpg"/>
+            </div>
+            <strong>Matilda</strong>
+            <button>Show Timings</button> 
+            </li>
+
+            <li class="item-d">
+                <div class="showingnow-box">
+                    <img src="./wicked.jpg"/>
+            </div>
+            <strong>Wicked</strong>
+            <button>Show Timings</button> 
+            </li>
+
+            <li class="item-e">
+                <div class="showingnow-box">
+                    <img src="./aladdin.jpg"/>
+            </div>
+            <strong>Aladdin</strong>
+            <button>Show Timings</button> 
+            </li>
+
+            <li class="item-f">
+                <div class="showingnow-box">
+                    <img src="./les.jpg"/>
+            </div>
+            <strong>Les Misérables</strong>
+            <button>Show Timings</button> 
+            </li>
+    
+          </ul>
+        </section>
+        <section id="c">
+            <ul id="autoWidth2" class="cs-hidden">
+                <li class="item-a">
+                    <div class="showingnow-box">
+                        <img src="./dracula.jpg"/>
+                    </div>
+                    <strong>Dracula Untold</strong>
+                    <button>Show Timings</button> 
+                </li>
+                
+                <li class="item-b">
+                    <div class="showingnow-box">
+                        <img src="./ss.jpeg"/>
+                    </div>
+                    <strong>Suicide Squad</strong>
+                    <button>Show Timings</button> 
+                </li>
+                
+                <li class="item-c">
+                    <div class="showingnow-box">
+                        <img src="./phantom.jpg"/>
+                </div>
+                <strong>The Phantom Of The Opera</strong>
+                <button>Show Timings</button> 
+                </li>
+    
+                <li class="item-d">
+                    <div class="showingnow-box">
+                        <img src="./adamsfam.jpg"/>
+                </div>
+                <strong>The Addams Family</strong>
+                <button>Show Timings</button> 
+                </li>
+    
+                <li class="item-e">
+                    <div class="showingnow-box">
+                        <img src="./mammamia.jpg"/>
+                </div>
+                <strong>Mamma Mia</strong>
+                <button>Show Timings</button> 
+                </li>
+    
+                <li class="item-f">
+                    <div class="showingnow-box">
+                        <img src="./getout.jpg"/>
+                </div>
+                <strong>Get Out</strong>
+                <button>Show Timings</button> 
+                </li>
+        
+              </ul>     
+       
+    </section>
+    <script>
+
+        $(document).ready(function() {
+            $('#autoWidth,#autoWidth2').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+                } 
+            });  
+          });
+        </script>
+        
+        </body>
+        </html>
